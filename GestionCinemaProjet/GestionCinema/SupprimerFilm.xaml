@@ -1,0 +1,16 @@
+﻿<Window x:Class="GestionCinema.SupprimerFilm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Supprimer un Film" Height="150" Width="300" Style="{StaticResource Windows}"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <TextBlock Text="Film :" Style="{StaticResource StyleTextFenetre}"/>
+            <ComboBox DockPanel.Dock="Top" Name="ListeFilmes" SelectedIndex="0" Width="280"/>
+        </StackPanel>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource StyleBoutons}" Content="Annuler" Click="fermer" />
+            <Button Style="{StaticResource StyleBoutons}" Content="Valider" Click="valider"/>
+        </WrapPanel>
+    </DockPanel>
+</Window>

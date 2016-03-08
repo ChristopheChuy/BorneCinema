@@ -1,0 +1,28 @@
+﻿<Window x:Class="GestionCinema.Paiement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Paiement" Height="330" Width="450" Style="{StaticResource Windows}"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Margin="0,15,0,0">
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Name="NomFilm" Style="{StaticResource StyleTextFenetre}"/>
+                <TextBlock Text="       |       " Style="{StaticResource StyleTextFenetre}"/>
+                <TextBlock Name="NbPace" Style="{StaticResource StyleTextFenetre}"/>
+                <TextBlock Text="       |       " Style="{StaticResource StyleTextFenetre}"/>
+                <TextBlock Name="Prix" Style="{StaticResource StyleTextFenetre}"/>
+            </WrapPanel>
+            <TextBlock Text="______________________________________________" Style="{StaticResource StyleTextFenetre}"/>
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Text="Total :  " Style="{StaticResource StyleTextFenetre}"/>
+                <TextBlock Name="PrixTotal" Style="{StaticResource StyleTextFenetre}"/>
+            </WrapPanel>
+        </StackPanel>
+        <TextBlock DockPanel.Dock="Top" Text="Veuillez inserer votre carte bancaire" Style="{StaticResource StyleText}"/>
+        <Image DockPanel.Dock="Top" Source="Carte.png" Width="250"/>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource StyleBoutons}" Content="Annuler Transaction" Click="Fermer" />
+            <Button Style="{StaticResource StyleBoutons}" Content="Payer" Click="Payer" />
+        </WrapPanel>
+    </DockPanel>
+</Window>
