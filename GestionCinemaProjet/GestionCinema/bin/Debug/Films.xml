@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFilm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Film>
+    <Nom>tght</Nom>
+    <Realisateur>htrht</Realisateur>
+    <Duree>dth</Duree>
+    <Chemin>C:\Users\christophe\Pictures\Fond d'ecran\294907.jpg</Chemin>
+    <Synopsis>thrrhtrt</Synopsis>
+    <AgeLimite>18</AgeLimite>
+    <TroisDimension>true</TroisDimension>
+    <LesSeances>
+      <Seance>
+        <PlaceLibre>149</PlaceLibre>
+        <Horaire>15h30</Horaire>
+        <LaSalle>
+          <Numero>15</Numero>
+          <Capacite>150</Capacite>
+        </LaSalle>
+        <Prix>
+          <Centime>650</Centime>
+        </Prix>
+        <Projectioniste>
+          <Nom>htrt</Nom>
+          <Prenom>htrhtrtrh</Prenom>
+        </Projectioniste>
+      </Seance>
+    </LesSeances>
+  </Film>
+  <Film>
+    <Nom>fghhy</Nom>
+    <Realisateur>yth</Realisateur>
+    <Duree>tyht</Duree>
+    <Chemin>C:\Users\christophe\Pictures\Fond d'ecran\8997_monster_hunter.jpg</Chemin>
+    <Synopsis>tyjjy</Synopsis>
+    <AgeLimite>55</AgeLimite>
+    <TroisDimension>true</TroisDimension>
+    <LesSeances>
+      <Seance>
+        <PlaceLibre>150</PlaceLibre>
+        <Horaire>5253</Horaire>
+        <LaSalle>
+          <Numero>15</Numero>
+          <Capacite>150</Capacite>
+        </LaSalle>
+        <Prix>
+          <Centime>650</Centime>
+        </Prix>
+        <Projectioniste>
+          <Nom>htrt</Nom>
+          <Prenom>htrhtrtrh</Prenom>
+        </Projectioniste>
+      </Seance>
+    </LesSeances>
+  </Film>
+</ArrayOfFilm>

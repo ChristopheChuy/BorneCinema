@@ -1,0 +1,20 @@
+﻿<Window x:Class="GestionCinema.AjouterSeance"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ajouter une Seance" Height="250" Width="300" Style="{StaticResource Windows}"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="Salle" Style="{StaticResource StyleTextFenetre}"/>
+            <ComboBox Name="Salle" Width="100"/>
+            <TextBlock Text="Personne" Style="{StaticResource StyleTextFenetre}"/>
+            <ComboBox Name="Projectionniste" Width="100"/>
+            <TextBlock Text="Horaire" Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Horaire" Style="{StaticResource StyleTextBox}"/>
+        </StackPanel>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource StyleBoutons}" Content="Annuler" Click="fermer" />
+            <Button Style="{StaticResource StyleBoutons}" Content="Ajouter" Click="ajouter"/>
+        </WrapPanel>
+    </DockPanel>
+</Window>

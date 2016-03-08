@@ -1,0 +1,26 @@
+﻿<Window x:Class="GestionCinema.AjouterFilm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ajouter un Film" Height="520" Width="320" Style="{StaticResource Windows}"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="Nom du Film" Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Nom" Style="{StaticResource StyleTextBox}"/>
+            <TextBlock Text="Réalisateur" Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Rea" Style="{StaticResource StyleTextBox}"/>
+            <TextBlock Text="Durée" Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Duree" Style="{StaticResource StyleTextBox}"/>
+            <TextBlock Text="Synopsis" Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Synopsis" Width="280" Height="60" Margin=" 0,0,0,12"/>
+            <TextBlock Text="Age Limite" Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Age" Style="{StaticResource StyleTextBox}"/>
+            <CheckBox Name="ThreeD" Content="3D" HorizontalAlignment="Center" Margin=" 0,0,0,6" Foreground="#FFE0E0E0" FontSize="18"/>
+            <Button Style="{StaticResource StyleBoutons}" Width="100" Content="Affiche" Click="Affiche"/>
+        </StackPanel>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource StyleBoutons}" Content="Annuler" Click="fermer"/>
+            <Button Style="{StaticResource StyleBoutons}" Content="Ajouter" Click="valider"/>
+        </WrapPanel>
+    </DockPanel>
+</Window>

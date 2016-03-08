@@ -1,0 +1,18 @@
+﻿<Window x:Class="GestionCinema.AjouterPersonne"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ajouter un Projectionniste" Height="210" Width="300" Style="{StaticResource Windows}"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="Nom"  Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Nom" Style="{StaticResource StyleTextBox}"/>
+            <TextBlock Text="Prénom"  Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Prenom" Style="{StaticResource StyleTextBox}"/>
+        </StackPanel>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource StyleBoutons}" Content="Annuler"  Click="fermer" />
+            <Button Style="{StaticResource StyleBoutons}" Content="Ajouter"  Click="valider" />
+        </WrapPanel>
+    </DockPanel>
+</Window>

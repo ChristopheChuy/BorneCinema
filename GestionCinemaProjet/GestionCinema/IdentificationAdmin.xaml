@@ -1,0 +1,18 @@
+﻿<Window x:Class="GestionCinema.IdentificationAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Identification Admin" Height="200" Width="250" 
+        Style="{StaticResource Windows}" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="Login" Style="{StaticResource StyleTextFenetre}"/>
+            <TextBox Name="Login" Style="{StaticResource StyleTextBox}"/>
+            <TextBlock Text="Mot de Passe" Style="{StaticResource StyleTextFenetre}"/>
+            <PasswordBox Name="MDP" Width="100"/>
+        </StackPanel>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource StyleBoutons}" Content="Annuler"  Click="Fermer"/>
+            <Button Style="{StaticResource StyleBoutons}" Content="Valider"  Click="Valider"/>
+        </WrapPanel>
+    </DockPanel>
+</Window>
